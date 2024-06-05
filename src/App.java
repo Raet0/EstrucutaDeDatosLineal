@@ -1,3 +1,4 @@
+import Materia.Cola.ColaGenerica;
 import Materia.Moders.Pantalla;
 import Materia.Moders.PilaGenerica;
 import Materia.Moders.Pilas.Pila;
@@ -26,5 +27,18 @@ public class App {
         System.out.println("Estoy en la pantalla "+pilaPantallas.peek().getNombre());
         pilaPantallas.push(new Pantalla("User page", "/home/menu/user"));
         System.out.println("Estoy en la pantalla \n\t "+pilaPantallas.peek().getNombre());
+        //imprimir la colaGenerica
+        ColaGenerica<Pantalla> colaGenerica = new ColaGenerica<>();
+        colaGenerica.addNode(new Pantalla("Menu Page", "home"));
+        System.out.println("Estoy en la pantalla \t"+colaGenerica.peek().getNombre());
+        System.out.println("Estoy en la pantalla \t"+colaGenerica.peek().getNombre());
+        colaGenerica.addNode(new Pantalla("User page ", "home/menu/user"));
+        System.out.println("Estoy en la pantalla "+colaGenerica.peek().getNombre());
+        System.out.println("Estoy en la pantalla "+colaGenerica.remove().getNombre());
+        System.out.println("Estoy en la pantalla "+colaGenerica.remove().getNombre());
+        System.out.println("Estoy en la pantalla "+colaGenerica.peek().getNombre());
+
+
+        
     }
 }
