@@ -1,3 +1,4 @@
+import Ejercicio_01_sign.ValidacionDeSignos;
 import Materia.Cola.ColaGenerica;
 import Materia.Moders.Pantalla;
 import Materia.Moders.PilaGenerica;
@@ -5,7 +6,7 @@ import Materia.Moders.Pilas.Pila;
 
 public class App {
     public static void main(String[] args) throws Exception {
-
+        /*
         Pila pila = new Pila();
         pila.push(10);
         pila.push(20);
@@ -37,8 +38,20 @@ public class App {
         System.out.println("Estoy en la pantalla "+colaGenerica.remove().getNombre());
         System.out.println("Estoy en la pantalla "+colaGenerica.remove().getNombre());
         System.out.println("Estoy en la pantalla "+colaGenerica.peek().getNombre());
-
-
+         */
+        // imprimir nuevo metodo que comprueba el caracter
+        ValidacionDeSignos validador = new ValidacionDeSignos();
+        String[] testCaracater = {
+            "()",
+            "({[()]})",
+            "({[)]})",
+            "({[})",
+            "([]{})",
+            "{[()]}"
+        };
+        for (String testCaracter : testCaracater){
+            System.out.println("La cadena " + testCaracater +  "es valida:" + validador.isValid(testCaracater));
+        }
         
     }
 }
