@@ -38,7 +38,7 @@ public class Pila {
         }
         return top.value;
     }
-    public boolean isEmpety(){
+    public boolean isEmpty(){
         return top == null;
 }
 }

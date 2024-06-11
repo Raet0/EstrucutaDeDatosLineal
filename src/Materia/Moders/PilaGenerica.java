@@ -14,12 +14,12 @@ public class PilaGenerica<T> {
         nuevoNodo.next = top;
         top = nuevoNodo;
     }
-    public boolean  isEmpety(){
+    public boolean  isEmpty(){
         return top == null;
 
     }
     public T pop (){
-        if(isEmpety()){
+        if(isEmpty()){
             System.out.println("Pila esta vacia");
             throw new EmptyStackException();
         }
@@ -28,7 +28,7 @@ public class PilaGenerica<T> {
         return data;
     }
     public T peek (){
-        if(isEmpety()){
+        if(isEmpty()){
             System.out.println("Pila esta vacia");
             throw new EmptyStackException();
         }
