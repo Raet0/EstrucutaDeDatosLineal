@@ -7,3 +7,4 @@ Rafael Prieto <- Como la mano derecha del capo
 - Clases Colas
 ### v2.0.2
 - Estrucutas Lineales- Ejercicios
+### subiendo el deber sobre las dos clasese creadas
